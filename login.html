@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEBPAGE_SAMPLE LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function login(){
+        var email= document.getElementById("email").value;
+        var password = document.getElementById("pwd1").value;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if(email =='')
+        {
+            alert("please enter user name.");
+        }
+        else if(password=='')
+        {
+            alert("enter the password");
+        }
+        else if(!filter.test(email))
+        {
+            alert("Enter valid email id.");
+        }
+        else if(password.length < 6 || pwd.length > 6)
+        {
+            alert("Password min and max length is 6.");
+        }
+        else 
+        {
+    alert("Thank You for Login & You are Redirecting to home page");
+            }
+        }       
+    function clearFunc()
+    {
+        document.getElementById("email").value="";
+        document.getElementById("pwd1").value="";
+    }
+</script>   
+<body>
+    <section>
+    <div class="main" id="1">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">ConNect</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#1"class="nav_link">HOME</a></li>
+                    <li><a href="#2"class="nav_link">ABOUT</a></li>
+                    <li><a href="#3"class="nav_link">SERVICE</a></li>
+                    <li><a href="#4"class="nav_link">PROFILE</a></li>
+                    <li><a href="#5"class="nav_link">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>TraveLenza<br><span>Ur Holiday Planner </span><br></h1>
+            <p class="par">inspire others to explore, experience new things, <br>and gain an appreciation of different cultures
+                 <br> A place is so many things .<br>After all It's the people, the architecture, the sounds of the city,<br> the smells and tastes of the food, and more
+                <br></p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" id="pwd1" name="" placeholder="Enter Password Here">
+                    <!-- <input type="submit" value="Reset" onclick="clearFunc()" class="btnn" />
+                    <input type="submit" value="Login" class="btnn" onClick="login()" /> -->
+                    <button class="btnn" value="Reset" onclick="clearFunc()">RESET</button>
+                    <button class="btnn" value="Login"  onClick="login()">LOGIN</button>
+                   
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      </section>
+
+    <section class="about_img">
+      <div class="element_style">
+        <div class="about_content" id="2">
+          <h2 class="about_heading">ABOUT US</h2>
+          <div class="about_parah">
+            <p style="word-spacing: 3.5px;
+            letter-spacing: 0.5px;
+            text-align:inherit;
+            font-size: 30px;
+            font-family:'Times New Roman', Times, serif;">
+              TraveLenza is a holiday planner which helps the people to get well connected with their family.
+              In this busy world working people find diifficult to spend the quality time with their beloved ones.
+              We help people to plan their holidays without disturbing their busy schedule. We kicked off this start-up when one of our family member was suffering from the fear that he might lose the bond with his beloved ones. 
+              Due to his work loads he rarely spends time with them .
+             So inorder to overcome his fear we a group of 5 came up with is idea and we completed successfully 10 years of our journey !!!
+            </p>
+          </div>
+        </div>
+      </div>
+      </section >
+
+      <div id="3"></div>
+      <div class="about_service">
+      <section class="events" >
+        <div class="eve_head">
+          <h2 class="eve_title" style="font-size: 50px">OUR SERVICES</h2>
+          <br>
+          <p
+            class="eve_parah"
+            style="margin-top: 20px;font-weight: 100; width: 550px; text-align: center ;font-weight: 250;
+            word-spacing: 3.5px;
+            letter-spacing: 0.5px;
+            text-align:center;
+            font-size: 30px;
+            font-family:'Times New Roman', Times, serif;"
+          >
+            We plan holiday trips within and outside India which is economical for common people.  
+            According to the customer's wish we estimate the total amount for the trip including food ,stay and guides .
+            
+          </p>
+          <br>
+        </div>
+    
+        <div class="event_images">
+          <div class="card">
+            <div class="eventing">
+              <img
+                src="./images/beach_2.jpeg"
+                alt="Mexico"
+                style="width: 18rem; height: 18rem"
+              />
+            </div>
+            <div class="event_content">
+              <p>Mexico
+                <br>
+                Mexico is famous for its vibrant culture, beautiful beaches, and rich ancient history.
+                 Mexico is also known for its delicious Mexican dishes and food, with some of its most 
+                 popular exports including chocolate and hot peppers.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="eventing">
+              <img
+                src="./images/mountain (1).jpeg"
+                alt="Australia"
+                style="width: 18rem; height: 18rem"
+              />
+            </div>
+            <div class="event_content">
+              <p>Australia
+                <br>
+                Australia is the largest country by area in Oceania and the world's sixth-largest country.
+                Australia is known for many things, including swathes of tropical beaches, marine reserves, Aboriginal culture, 
+                cute koalas, rolling wine country, and lush rainforests .
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="eventing">
+              <img
+                src="./images/beach_3.jpeg"
+                alt="Maldives"
+                style="width: 18rem; height: 18rem"
+              />
+            </div>
+            <div class="event_content">
+              <p>Maldives
+              </p>
+              <br>
+              The Maldives is a tropical holiday destination in the Indian Ocean. 
+              The stunning islands are very relaxed and offer an experience which can best be
+               described as a getaway on a desert island but with high quality accommodation, spectacular food, 
+               excellent service and an extensive range of activities.
+            </div>
+          </div>
+          <div class="card">
+            <div class="eventing">
+              <img
+                src="./images/lighthouse.jpeg"
+                alt="Varkala"
+                style="width: 18rem; height: 18rem"
+              />
+              
+            </div>
+            <div class="event_content">
+              <p>Varkala
+                <br>
+                Varkala is a tiny hamlet on the outskirts of Thiruvananthapuram that has attracted pilgrims and tourists for a long time.
+                Its beach is famous for its natural springs which are said to have medicinal qualities.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="eventing">
+              <img
+                src="./images/1.jpeg"
+                alt="Goa"
+                style="width: 18rem; height: 18rem"
+              />
+            </div>
+            <div class="event_content">
+              <p>Goa
+                <br>
+                Goa is also called “Rome of the East” or “The Miami of India”, and has a distinct Portuguese legacy,
+                 perky nightlife, natural beauty, and great culinary experience.
+                  It is a destination for all seasons. The culture of Goan people is a blend of Portuguese and Indian culture.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="eventing">
+              <img
+                src="./images/road.jpeg"
+                alt="Coorg"
+                style="width: 18rem; height: 18rem"
+              />
+            </div>
+            <div class="event_content">
+              <p>Coorg
+                <br>
+                Coorg in Karnataka is known as the Scotland of India. 
+                It is also known as Kodagu, and is famous for its exquisite climate,
+                 hill ranges, and coffee plantations.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+      </section>
+
+      <div id="4"></div>
+      <section class="about_profileimg">
+      <h2 class="eve_head "style="font-size: 50px;font-family:'Times New Roman', Times, serif">PROFILE</h2>
+        
+      <div class="row">
+        <div class="column left">
+        <div class="profile">
+          
+          <h2 style="padding-left:10px";> Core Team</h2>
+          <p style="padding : 10px;">&diams;  New resources, opportunities and many discounts .<br>
+          &diams;   Advance your career in the right direction<br>
+          &diams;   Chance to be a part of this entreprise <br><br>
+          <a href="#"
+          style="border: none;">Know More</a>
+                          
+          </p>
+          </div> 
+          </div>
+
+         <div class="column middle">
+          <div class="profile">
+            
+          <h2 style="padding-left:10px";>Planning Committee</h2>
+          <p style="padding : 10px;">&diams; Stay updated with latest trends in society<br>
+          &diams; Network with colleagues locally and abroad<br>
+          &diams; Collaborate with people and 
+          increase the opportunities   for  the comman people to travel<br><br>
+          <a href="#"
+          style="border: none;">Know More</a>
+          </p>
+          </div>
+          </div>
+
+      
+          <div class="column right"> 
+          <div class="profile">
+          
+          <h2 style="padding-left:10px";>Design Team</h2>
+          <p style="padding : 10px;">
+          &diams; Be a part of the world’s largest technology community<br>
+          &diams; Join professional and experts to shape your mind<br>
+          &diams; Acquire new skills, and advance your professional growth and development<br><br>
+          <a href="#"
+          style="border: none;">Know More</a>
+          </p>
+          </div> 
+          </div>    
+      </div>    
+      </section>
+
+
+     <div id="5"></div>
+     <footer style="height: 200px;">
+      <div class="icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+    </div>
+  </footer>
+
+</body>
+</html>
